@@ -27,4 +27,4 @@ SELECT json_agg(t) FROM words."language" as t
  
  
  
- select words.proc_language_create('{"language_id":0,"language_name":"English","language_shortname":"en","created_at":null,"changed_at":null}')
+ select words.fun_language_create('{"language_id":0,"language_name":"English","language_shortname":"en","created_at":null,"changed_at":null}')

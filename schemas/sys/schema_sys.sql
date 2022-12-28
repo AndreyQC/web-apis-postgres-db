@@ -1,0 +1,1 @@
+CREATE SCHEMA sys AUTHORIZATION andreyqc;
