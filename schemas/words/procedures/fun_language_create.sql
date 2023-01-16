@@ -50,7 +50,7 @@ $$
                     v_language_shortname
                 )
             RETURNING 
-                language_id,
+                id,
                 created_at,
                 changed_at
             INTO 
@@ -58,7 +58,7 @@ $$
                 v_created_at,
                 v_changed_at;
             
-            return json_build_object('language_id',v_language_id,'language_name',v_language_name,'language_shortname',v_language_shortname,'created_at',v_created_at,'changed_at',v_changed_at) ;        
+            return json_build_object('id',v_language_id,'language_name',v_language_name,'language_shortname',v_language_shortname,'created_at',v_created_at,'changed_at',v_changed_at) ;        
         end if;
     
     END  

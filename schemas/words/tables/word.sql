@@ -8,7 +8,7 @@
 --drop table if exists words.word;
 
 CREATE TABLE words.word(
-   word_id bigint GENERATED ALWAYS AS IDENTITY
+   id bigint GENERATED ALWAYS AS IDENTITY
              (MINVALUE 0 START WITH 0 CACHE 20)
              PRIMARY KEY,
    word TEXT,
