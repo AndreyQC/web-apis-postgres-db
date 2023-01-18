@@ -33,7 +33,8 @@ $$
               'id', t.id,
               'user_name', t.user_name,
               'created_at', t.created_at,
-              'changed_at', t.changed_at
+              'changed_at', t.changed_at,
+              'saved_in_database',True
             ) as "user"
             FROM sys.user as t $s$;  
         

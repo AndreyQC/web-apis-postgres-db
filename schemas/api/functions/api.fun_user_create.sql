@@ -53,7 +53,7 @@ $$
                 v_created_at,
                 v_changed_at;
             
-            return json_build_object('id',v_user_id,'user_name',v_user_name,'created_at',v_created_at,'changed_at',v_changed_at) ;        
+            return json_build_object('id',v_user_id,'user_name',v_user_name,'created_at',v_created_at,'changed_at',v_changed_at,'saved_in_database',True) ;        
         end if;
     
     END  
