@@ -139,6 +139,13 @@ values
     ('четвертый  пост', 'что-то про четвертый пост',101),
     ('пятый  пост', 'что-то про пятый пост', 121);
 
+-- введем пост без юзера
+INSERT INTO post."post" (title, post_text, user_id)
+values
+    ('пустой  пост', 'что-то про пустой пост',null);
+
+-- выведем
+select * from post."post";
 
 SELECT pst.id, 
         pst.title, 
